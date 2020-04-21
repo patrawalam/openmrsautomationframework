@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Service Now]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.openmrs.listeners.CustomListener"/>
+    <listener class-name="com.openmrs.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="ServiceNowTests(failed)">
+    <classes>
+      <class name="com.openmrs.tests.RegisterPatientTest">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="T_005_ConfirmPatientRegisteredUsingPatientName" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="T_003_RegisterNewPatient"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.openmrs.tests.RegisterPatientTest -->
+    </classes>
+  </test> <!-- ServiceNowTests(failed) -->
+</suite> <!-- Failed suite [Service Now] -->

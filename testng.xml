@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Service Now" parallel = "classes">
+
+	<listeners>
+		<listener class-name="com.openmrs.listeners.CustomListener" />
+		<listener class-name="com.openmrs.listeners.AnnotationTransformer" />
+		
+	</listeners>
+
+	<test name="ServiceNowTests" >
+		<classes>
+			<!-- <class name="com.openmrs.tests.LoginTest" />-->
+			<class name="com.openmrs.tests.RegisterPatientTest" />
+			 <class name="com.openmrs.tests.CaptureVitalsTest" />  
+			 <class name="com.openmrs.tests.ServiceTypeTest" /> 
+		</classes>
+	</test> 
+
+
+</suite> 

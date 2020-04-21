@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.openmrs.tests.LoginTest">
+        <methods>
+          <include name="T_001_LoginTest" invocation-numbers="0 1 2"/>
+          <include name="wrapUp"/>
+          <include name="T_002_LogoutTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.openmrs.tests.LoginTest -->
+      <class name="com.openmrs.tests.RegisterPatientTest">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="T_005_ConfirmPatientRegisteredUsingPatientName"/>
+          <include name="T_004_ConfirmPatientRegisteredUsingPatientID" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="T_003_RegisterNewPatient" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.openmrs.tests.RegisterPatientTest -->
+      <class name="com.openmrs.tests.ZServiceNowTests">
+        <methods>
+          <include name="tc05"/>
+          <include name="wrapUp"/>
+          <include name="tc03"/>
+          <include name="tc04"/>
+          <include name="LoginNegativeTest"/>
+          <include name="setUp"/>
+          <include name="LoginTest"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.openmrs.tests.ZServiceNowTests -->
+      <class name="com.openmrs.tests.CaptureVitalsTest">
+        <methods>
+          <include name="wrapUp"/>
+          <include name="T_006_CreateAVisitAndCaptureVitals" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="T_007_VerifyVitals" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.openmrs.tests.CaptureVitalsTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
