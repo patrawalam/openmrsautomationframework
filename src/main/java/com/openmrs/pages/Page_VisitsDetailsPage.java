@@ -38,7 +38,7 @@ public class Page_VisitsDetailsPage extends BasePage {
 
 	public Object navigateToCaptureVitals() {
 		wait.until(ExpectedConditions.elementToBeClickable(lnkCaptureVitals));
-		lnkCaptureVitals.click();
+		click(lnkCaptureVitals);
 		
 		if(isElementPresent(txtHeight))
 			return new Page_CaptureVitals();
@@ -50,9 +50,9 @@ public class Page_VisitsDetailsPage extends BasePage {
 	public Object endVisit() {
 		
 		wait.until(ExpectedConditions.elementToBeClickable(lnkEndVisit));
-		lnkEndVisit.click();
+		click(lnkEndVisit);
 		wait.until(ExpectedConditions.elementToBeClickable(btnYes));
-		btnYes.click();
+		click(btnYes);
 		
 		if(isElementPresent(lblNoActiveVisit)) 
 			return this;

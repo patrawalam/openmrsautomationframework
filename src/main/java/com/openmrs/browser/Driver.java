@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -26,6 +27,7 @@ public class Driver {
 		if(localOrRemote.equalsIgnoreCase("local")) {
 			if(browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", Constants.CHROMEDRIVERPATH);
+				System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true");
 				driver=new ChromeDriver();
 				//System.out.println("ChromeDriver created");
 			}
@@ -57,7 +59,11 @@ public class Driver {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-		driver.manage().window().maximize();
+		if(TestUtils.getValue("BrowserDimensions").equalsIgnoreCase("fullscreen"))
+			driver.manage().window().fullscreen();
+		else
+			driver.manage().window().maximize();
+		
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICITWAIT, TimeUnit.SECONDS);
 		
 		try {

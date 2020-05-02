@@ -28,7 +28,6 @@ public class RegisterPatientTest extends BaseTest {
 		
 		suite = testContext.getSuite();
 		
-
 		LogStatus.info(methodName.getName() + " :: Logging in with Default Login");
 		Page_Home homePage = doDefaultLogin();
 		
@@ -67,7 +66,7 @@ public class RegisterPatientTest extends BaseTest {
 		LogStatus.pass(methodName.getName() + " :: Patient details match");
 	}
 	
-	@Test(dependsOnMethods = {"T_003_RegisterNewPatient"}, description = "Confirm patient registered using Patient ID")
+	@Test(dependsOnGroups = {"registerpatient"}, description = "Confirm patient registered using Patient ID")	//dependsOnMethods = {"T_003_RegisterNewPatient"}, 
 	public void T_004_ConfirmPatientRegisteredUsingPatientID(Hashtable<String,String> data, Method methodName, ITestContext testContext) {
 		
 		LogStatus.info(data.toString());
@@ -103,7 +102,7 @@ public class RegisterPatientTest extends BaseTest {
 		LogStatus.pass(methodName.getName() + " :: Patient details searched with ID matches");
 	}
 
-	@Test(description = "Confirm patient registered using Patient Name", dependsOnMethods = {"T_003_RegisterNewPatient"} )
+	@Test(description = "Confirm patient registered using Patient Name", dependsOnGroups = {"registerpatient"})	//dependsOnMethods = {"T_003_RegisterNewPatient"}
 	public void T_005_ConfirmPatientRegisteredUsingPatientName(Hashtable<String,String> data, Method methodName, ITestContext testContext) {
 		
 		LogStatus.info(data.toString());

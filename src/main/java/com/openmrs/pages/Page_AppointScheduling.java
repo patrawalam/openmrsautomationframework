@@ -20,7 +20,7 @@ public class Page_AppointScheduling extends BasePage{
 	}
 	
 	public Object gotoManageServiceTypes() {
-		lnkManageServiceTypes.click();
+		click(lnkManageServiceTypes);
 		if(!(isElementPresent(isManageServiceTypeHeadingPresent)))
 			return this;
 		else

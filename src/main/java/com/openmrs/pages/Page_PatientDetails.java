@@ -79,7 +79,8 @@ public class Page_PatientDetails extends BasePage {
 			String year, String address1, ISuite suite) {
 
 		wait.until(ExpectedConditions.elementToBeClickable(lnkShowContactInfo));
-		lnkShowContactInfo.click();
+		click(lnkShowContactInfo);
+		
 		boolean verifyFirstName = txtPersonGivenName.getText().equals(fName);
 		boolean verifyLastName = txtPersonFamilyName.getText().equals(lName);
 		boolean verifyGender = txtGender.getText().split(" ")[0].trim().contains(gender);
@@ -111,8 +112,8 @@ public class Page_PatientDetails extends BasePage {
 
 	public Object navigateToStartAVisit() {
 		wait.until(ExpectedConditions.elementToBeClickable(lnkStartVisit));
-		lnkStartVisit.click();
-		btnConfirm.click();
+		click(lnkStartVisit);
+		click(btnConfirm);
 		
 		if(isElementPresent(lnkAttachments))
 			return new Page_VisitsDetailsPage();

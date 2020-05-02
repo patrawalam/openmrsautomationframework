@@ -63,31 +63,32 @@ public class Page_RegisterAPatient extends BasePage {
 	}
 	
 	public Object fillDetailsOfPatient(String fName, String lName, String gender, String day, String Month, String Year, String address1) {
-		txtGivenName.sendKeys(fName);
-		txtFamilyName.sendKeys(lName);
+		
+		sendkeys(txtGivenName, fName);
+		sendkeys(txtFamilyName, lName);
 		txtFamilyName.sendKeys(Keys.ENTER);
-		lblGender.click();
+		click(lblGender);
 		
 		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
-		Select sel = new Select(selGender);
-		sel.selectByVisibleText(gender);
+		selectByVisibleText(selGender, gender);
 		
 		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
-		lblBirthdateLabel.click();
+		click(lblBirthdateLabel);
+
+		sendkeys(txtBirthdateDay, String.valueOf((int) Double.parseDouble(day)));
+		selectByVisibleText(selBirthdateMonth, Month);
 		
-		txtBirthdateDay.sendKeys(String.valueOf((int) Double.parseDouble(day)));
-		sel = new Select(selBirthdateMonth);
-		sel.selectByVisibleText(Month);
-		txtBirthdateYear.sendKeys(String.valueOf((int) Double.parseDouble(Year)));
+		sendkeys(txtBirthdateYear, String.valueOf((int) Double.parseDouble(Year)));
 		txtBirthdateYear.sendKeys(Keys.ENTER);
-		lblAddress.click();
+		click(lblAddress);
 		
 		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
-		txtAddress1.sendKeys(address1);
+		sendkeys(txtAddress1, address1);
+		click(lblConfirmation);
 		lblConfirmation.click();
 		LogStatus.takeScreenShot();
 		
-		btnSubmit.click();
+		click(btnSubmit);
 		
 		if(isElementPresent(txtPersonGivenName))
 			return new Page_PatientDetails();

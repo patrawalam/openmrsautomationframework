@@ -31,7 +31,7 @@ public class Page_Home extends BasePage {
 	}
 	
 	public Object navigateToRegisterAPatient() {
-		lnkRegisterAPatient.click();
+		click(lnkRegisterAPatient);
 		if(!(isElementPresent(isGivenNamePresent)))
 			return this;
 		else
@@ -39,7 +39,7 @@ public class Page_Home extends BasePage {
 	}
 
 	public Object navigateToFindAPatient() {
-		lnkFindPatient.click();
+		click(lnkFindPatient);
 		if(!(isElementPresent(isSearchBoxPresent)))
 			return this;
 		else
@@ -47,7 +47,7 @@ public class Page_Home extends BasePage {
 	}
 	
 	public Object navigateToCaptureVitals() {
-		lnkCaptureVitals.click();
+		click(lnkCaptureVitals);
 		if(!(isElementPresent(isSearchBoxPresent)))
 			return this;
 		else
@@ -55,7 +55,7 @@ public class Page_Home extends BasePage {
 	}
 	
 	public Object navigateToAppointmentScheduling() {
-		lnkAppointScheduling.click();
+		click(lnkAppointScheduling);
 		if(!(isElementPresent(isManageServiceTypePresent)))
 			return this;
 		else

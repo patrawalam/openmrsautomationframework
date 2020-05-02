@@ -19,7 +19,6 @@ public class LogStatus {
 	public static void pass(String message)
 	{
 		ExtentManager.getExtTest().log(com.relevantcodes.extentreports.LogStatus.PASS, message);
-		
 	}
 
 	public static void fail(String message)
@@ -67,10 +66,9 @@ public class LogStatus {
 		ExtentManager.getExtTest().log(com.relevantcodes.extentreports.LogStatus.WARNING, message);
 	}
 	
-	public static void pass(String string, String addScreenCapture) {
-
+	public static void pass(String string, String addScreenCapture)
+	{
 			ExtentManager.getExtTest().log(com.relevantcodes.extentreports.LogStatus.PASS, string,ExtentManager.getExtTest().addBase64ScreenShot("data:image/png;base64,"+TestUtils.getBase64Image(addScreenCapture)));
-		
 	}
 
 	public static void fail(String string, String addScreenCapture)
@@ -82,7 +80,7 @@ public class LogStatus {
 	{
 			ExtentManager.getExtTest().log(com.relevantcodes.extentreports.LogStatus.SKIP, string,ExtentManager.getExtTest().addBase64ScreenShot("data:image/png;base64,"+TestUtils.getBase64Image(addScreenCapture)));
 	}
-	
+	/*
 	public static void takeScreenShot(){
 		Date d=new Date();
 		String screenshotFile=d.toString().replace(":", "_").replace(" ", "_")+".png";
@@ -98,6 +96,22 @@ public class LogStatus {
 		
 		ExtentManager.getExtTest().log(com.relevantcodes.extentreports.LogStatus.INFO, ExtentManager.getExtTest().addScreenCapture(filePath));
 	}
+	*/
 	
+	public static void takeScreenShot(){
+		/*
+		 * Date d=new Date(); String screenshotFile=d.toString().replace(":",
+		 * "_").replace(" ", "_")+".png"; String
+		 * filePath=Constants.SCREENSHOTPATH+screenshotFile; // store screenshot in that
+		 * file File scrFile =
+		 * ((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.FILE)
+		 * ;
+		 * 
+		 * try { FileUtils.copyFile(scrFile, new File(filePath)); } catch (IOException
+		 * e) { e.printStackTrace(); }
+		 */
+		
+		ExtentManager.getExtTest().log(com.relevantcodes.extentreports.LogStatus.INFO, ExtentManager.getExtTest().addScreenCapture(TestUtils.pullScreenshotPath()));
+	}
 	
 }

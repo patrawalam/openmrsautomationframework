@@ -89,7 +89,7 @@ public class CaptureVitalsTest extends BaseTest {
 		
 	}
 
-	@Test(description = "Verify Vitals", dependsOnMethods = {"T_006_CreateAVisitAndCaptureVitals"})
+	@Test(description = "Verify Vitals", dependsOnGroups = {"registerpatient"})	//dependsOnMethods = {"T_006_CreateAVisitAndCaptureVitals"}
 	public void T_007_VerifyVitals(Hashtable<String, String> data, Method methodName, ITestContext testContext) {
 		
 		LogStatus.info(data.toString());

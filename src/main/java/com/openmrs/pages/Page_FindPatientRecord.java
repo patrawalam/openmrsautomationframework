@@ -33,11 +33,11 @@ public class Page_FindPatientRecord extends BasePage {
 	}
 	
 	public Object searchAndSelectPatientByID(String id) {
-		inputPatientSearch.sendKeys(id);
+		sendkeys(inputPatientSearch, id);
 		Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
 		wait.until(ExpectedConditions.elementToBeClickable(tblIdentifierBasedOnID));
 		if (tblIdentifierBasedOnID.getText().split(" ")[0].equals(id)) {
-			tblIdentifierBasedOnID.click();
+			click(tblIdentifierBasedOnID);
 			return new Page_PatientDetails(); 
 			}
 		else
@@ -45,11 +45,11 @@ public class Page_FindPatientRecord extends BasePage {
 	}
 	
 	public Object searchAndSelectPatientByName(String name) {
-		inputPatientSearch.sendKeys(name);
+		sendkeys(inputPatientSearch, name);
 		Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
 		wait.until(ExpectedConditions.elementToBeClickable(tblIdentifierBasedOnName));
-		if (tblIdentifierBasedOnID.getText().equalsIgnoreCase(name)) {
-			tblIdentifierBasedOnID.click();
+		if (tblIdentifierBasedOnName.getText().contains(name)) {
+			click(tblIdentifierBasedOnID);
 			return new Page_PatientDetails(); 
 			}
 		else

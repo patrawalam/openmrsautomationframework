@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="14" passed="9" failed="1" skipped="0">
+<testng-results ignored="4" total="15" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-19T09:08:09Z" name="Service Now" finished-at="2020-04-19T09:12:08Z" duration-ms="239213">
+  <suite started-at="2020-05-02T14:33:36Z" name="Open MRS Automation" finished-at="2020-05-02T14:37:28Z" duration-ms="231191">
     <groups>
       <group name="servicetype">
         <method signature="ServiceTypeTest.T_008_CreateServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" name="T_008_CreateServiceTypes" class="com.openmrs.tests.ServiceTypeTest"/>
@@ -12,21 +12,21 @@
         <method signature="RegisterPatientTest.T_003_RegisterNewPatient(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" name="T_003_RegisterNewPatient" class="com.openmrs.tests.RegisterPatientTest"/>
       </group> <!-- registerpatient -->
     </groups>
-    <test started-at="2020-04-19T09:08:09Z" name="ServiceNowTests" finished-at="2020-04-19T09:12:08Z" duration-ms="239213">
+    <test started-at="2020-05-02T14:33:36Z" name="Open MRS Automation Tests" finished-at="2020-05-02T14:37:28Z" duration-ms="231191">
       <class name="com.openmrs.tests.RegisterPatientTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:08:09Z" name="beforeSuite" finished-at="2020-04-19T09:08:09Z" duration-ms="201" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:33:36Z" name="beforeSuite" finished-at="2020-05-02T14:33:36Z" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:08:09Z" name="setUp" finished-at="2020-04-19T09:08:23Z" duration-ms="14095" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:33:37Z" name="setUp" finished-at="2020-05-02T14:33:56Z" duration-ms="19432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="T_003_RegisterNewPatient(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:08:23Z" name="T_003_RegisterNewPatient" description="Register a patient" finished-at="2020-04-19T09:09:01Z" duration-ms="37823" status="PASS">
+        <test-method signature="T_003_RegisterNewPatient(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:33:56Z" name="T_003_RegisterNewPatient" description="Register a patient" finished-at="2020-05-02T14:34:56Z" duration-ms="60174" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Year=1996.0, FamilyName=User, Runmode=Y, Month=June, Address=India, GivenName=Automation, ExpectedResult=Successful, Day=30.0, Gender=Male, Browser=Chrome}]]>
+                <![CDATA[{Year=1996, FamilyName=User, Runmode=Y, Month=June, Address=India, GivenName=Automation, ExpectedResult=Successful, Day=30, Gender=Male, Browser=Chrome}]]>
               </value>
             </param>
             <param index="1">
@@ -36,26 +36,26 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_003_RegisterNewPatient -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:09:01Z" name="wrapUp" finished-at="2020-04-19T09:09:03Z" duration-ms="1272" status="PASS">
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:34:56Z" name="wrapUp" finished-at="2020-05-02T14:34:58Z" duration-ms="1244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:09:03Z" name="setUp" finished-at="2020-04-19T09:09:18Z" duration-ms="15466" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:34:58Z" name="setUp" finished-at="2020-05-02T14:35:14Z" duration-ms="16463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="T_004_ConfirmPatientRegisteredUsingPatientID(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:09:18Z" name="T_004_ConfirmPatientRegisteredUsingPatientID" description="Confirm patient registered using Patient ID" finished-at="2020-04-19T09:10:07Z" depends-on-methods="com.openmrs.tests.RegisterPatientTest.T_003_RegisterNewPatient" duration-ms="49271" status="PASS">
+        <test-method signature="T_004_ConfirmPatientRegisteredUsingPatientID(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:35:14Z" name="T_004_ConfirmPatientRegisteredUsingPatientID" description="Confirm patient registered using Patient ID" depends-on-groups="registerpatient" finished-at="2020-05-02T14:36:28Z" duration-ms="73624" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Year=1996.0, FamilyName=User, Runmode=Y, Month=June, Address=India, GivenName=Automation, ExpectedResult=Successful, Day=30.0, Gender=Male, Browser=Chrome}]]>
+                <![CDATA[{Year=1996, FamilyName=User, Runmode=Y, Month=June, Address=India, GivenName=Automation, ExpectedResult=Successful, Day=30, Gender=Male, Browser=Chrome}]]>
               </value>
             </param>
             <param index="1">
@@ -65,26 +65,26 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_004_ConfirmPatientRegisteredUsingPatientID -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:10:07Z" name="wrapUp" finished-at="2020-04-19T09:10:08Z" duration-ms="912" status="PASS">
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:36:28Z" name="wrapUp" finished-at="2020-05-02T14:36:29Z" duration-ms="942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:10:08Z" name="setUp" finished-at="2020-04-19T09:10:20Z" duration-ms="12231" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:36:29Z" name="setUp" finished-at="2020-05-02T14:36:42Z" duration-ms="12899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="T_005_ConfirmPatientRegisteredUsingPatientName(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:10:20Z" name="T_005_ConfirmPatientRegisteredUsingPatientName" description="Confirm patient registered using Patient Name" finished-at="2020-04-19T09:10:32Z" depends-on-methods="com.openmrs.tests.RegisterPatientTest.T_003_RegisterNewPatient" duration-ms="11475" status="FAIL">
+        <test-method signature="T_005_ConfirmPatientRegisteredUsingPatientName(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:36:42Z" name="T_005_ConfirmPatientRegisteredUsingPatientName" description="Confirm patient registered using Patient Name" depends-on-groups="registerpatient" finished-at="2020-05-02T14:37:27Z" duration-ms="45122" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Year=1996.0, FamilyName=User, Runmode=Y, Month=June, Address=India, GivenName=Automation, ExpectedResult=Successful, Day=30.0, Gender=Male, Browser=Chrome}]]>
+                <![CDATA[{Year=1996, FamilyName=User, Runmode=Y, Month=June, Address=India, GivenName=Automation, ExpectedResult=Successful, Day=30, Gender=Male, Browser=Chrome}]]>
               </value>
             </param>
             <param index="1">
@@ -94,59 +94,32 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[T_005_ConfirmPatientRegisteredUsingPatientName :: Unable to Find Patient by Patient Name]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: T_005_ConfirmPatientRegisteredUsingPatientName :: Unable to Find Patient by Patient Name
-at org.testng.Assert.fail(Assert.java:96)
-at com.openmrs.tests.BaseTest.reportFailure(BaseTest.java:67)
-at com.openmrs.tests.RegisterPatientTest.T_005_ConfirmPatientRegisteredUsingPatientName(RegisterPatientTest.java:125)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
-at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:830)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_005_ConfirmPatientRegisteredUsingPatientName -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:10:32Z" name="wrapUp" finished-at="2020-04-19T09:10:33Z" duration-ms="959" status="PASS">
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:37:27Z" name="wrapUp" finished-at="2020-05-02T14:37:28Z" duration-ms="833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-04-19T09:12:08Z" name="afterSuite" finished-at="2020-04-19T09:12:10Z" duration-ms="1553" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.openmrs.tests.RegisterPatientTest@6c64cb25]" started-at="2020-05-02T14:37:28Z" name="afterSuite" finished-at="2020-05-02T14:37:30Z" duration-ms="2191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.openmrs.tests.RegisterPatientTest -->
       <class name="com.openmrs.tests.CaptureVitalsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-04-19T09:09:03Z" name="setUp" finished-at="2020-04-19T09:09:19Z" duration-ms="16042" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-05-02T14:34:58Z" name="setUp" finished-at="2020-05-02T14:35:10Z" duration-ms="12435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="T_006_CreateAVisitAndCaptureVitals(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-04-19T09:09:19Z" name="T_006_CreateAVisitAndCaptureVitals" description="Create a visit and capture vitals" depends-on-groups="registerpatient" finished-at="2020-04-19T09:10:32Z" duration-ms="73454" status="PASS">
+        <test-method signature="T_006_CreateAVisitAndCaptureVitals(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-05-02T14:35:10Z" name="T_006_CreateAVisitAndCaptureVitals" description="Create a visit and capture vitals" depends-on-groups="registerpatient" finished-at="2020-05-02T14:36:25Z" duration-ms="75143" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Diastolic=80.0, Height=172.0, Runmode=Y, ExpectedBMI=22.0, Systolic=120.0, Pulse=90.0, Weight=65.0, ExpectedResult=Successful, Browser=Chrome, Temperature=35.3}]]>
+                <![CDATA[{Diastolic=80, Height=172, Runmode=Y, ExpectedBMI=22, Systolic=120, Pulse=90, Weight=65, ExpectedResult=Successful, Browser=Chrome, Temperature=35.3}]]>
               </value>
             </param>
             <param index="1">
@@ -156,26 +129,26 @@ at java.base/java.lang.Thread.run(Thread.java:830)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_006_CreateAVisitAndCaptureVitals -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-04-19T09:10:32Z" name="wrapUp" finished-at="2020-04-19T09:10:33Z" duration-ms="1295" status="PASS">
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-05-02T14:36:25Z" name="wrapUp" finished-at="2020-05-02T14:36:26Z" duration-ms="1109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-04-19T09:10:33Z" name="setUp" finished-at="2020-04-19T09:10:44Z" duration-ms="10498" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-05-02T14:36:26Z" name="setUp" finished-at="2020-05-02T14:36:39Z" duration-ms="12929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="T_007_VerifyVitals(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-04-19T09:10:44Z" name="T_007_VerifyVitals" description="Verify Vitals" finished-at="2020-04-19T09:11:07Z" depends-on-methods="com.openmrs.tests.CaptureVitalsTest.T_006_CreateAVisitAndCaptureVitals" duration-ms="23050" status="PASS">
+        <test-method signature="T_007_VerifyVitals(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-05-02T14:36:39Z" name="T_007_VerifyVitals" description="Verify Vitals" depends-on-groups="registerpatient" finished-at="2020-05-02T14:37:19Z" duration-ms="39263" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Diastolic=80.0, Height=172.0, Runmode=Y, ExpectedBMI=22.0, Systolic=120.0, Pulse=90.0, Weight=65.0, ExpectedResult=Successful, Browser=Chrome, Temperature=35.3}]]>
+                <![CDATA[{Diastolic=80, Height=172, Runmode=Y, ExpectedBMI=22, Systolic=120, Pulse=90, Weight=65, ExpectedResult=Successful, Browser=Chrome, Temperature=35.3}]]>
               </value>
             </param>
             <param index="1">
@@ -185,36 +158,36 @@ at java.base/java.lang.Thread.run(Thread.java:830)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_007_VerifyVitals -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-04-19T09:11:07Z" name="wrapUp" finished-at="2020-04-19T09:11:08Z" duration-ms="999" status="PASS">
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.CaptureVitalsTest@6ae5aa72]" started-at="2020-05-02T14:37:19Z" name="wrapUp" finished-at="2020-05-02T14:37:19Z" duration-ms="747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
       </class> <!-- com.openmrs.tests.CaptureVitalsTest -->
       <class name="com.openmrs.tests.ServiceTypeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:08:09Z" name="setUp" finished-at="2020-04-19T09:08:24Z" duration-ms="15152" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:33:37Z" name="setUp" finished-at="2020-05-02T14:33:56Z" duration-ms="18871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:08:09Z" name="setUp" finished-at="2020-04-19T09:08:24Z" duration-ms="14330" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:33:37Z" name="setUp" finished-at="2020-05-02T14:33:54Z" duration-ms="17029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:08:09Z" name="setUp" finished-at="2020-04-19T09:08:23Z" duration-ms="14050" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:33:37Z" name="setUp" finished-at="2020-05-02T14:33:54Z" duration-ms="17333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="T_008_CreateServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:08:23Z" name="T_008_CreateServiceTypes" description="Adding Service Type" finished-at="2020-04-19T09:08:56Z" duration-ms="32539" status="PASS">
+        <test-method signature="T_008_CreateServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:33:54Z" name="T_008_CreateServiceTypes" description="Adding Service Type" finished-at="2020-05-02T14:34:51Z" duration-ms="57258" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=Z Automation Name 3, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 3, Duration=90.0, Browser=Chrome}]]>
+                <![CDATA[{Name=N Automation Name 2, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 2, Duration=60, Browser=Chrome}]]>
               </value>
             </param>
             <param index="1">
@@ -224,18 +197,18 @@ at java.base/java.lang.Thread.run(Thread.java:830)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_008_CreateServiceTypes -->
-        <test-method signature="T_008_CreateServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:08:24Z" name="T_008_CreateServiceTypes" description="Adding Service Type" finished-at="2020-04-19T09:08:58Z" duration-ms="34449" status="PASS">
+        <test-method signature="T_008_CreateServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:33:54Z" name="T_008_CreateServiceTypes" description="Adding Service Type" finished-at="2020-05-02T14:34:56Z" duration-ms="61972" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=Automation Name 1, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 1, Duration=30.0, Browser=Chrome}]]>
+                <![CDATA[{Name=Automation Name 1, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 1, Duration=30, Browser=Chrome}]]>
               </value>
             </param>
             <param index="1">
@@ -245,18 +218,18 @@ at java.base/java.lang.Thread.run(Thread.java:830)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_008_CreateServiceTypes -->
-        <test-method signature="T_008_CreateServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:08:24Z" name="T_008_CreateServiceTypes" description="Adding Service Type" finished-at="2020-04-19T09:09:01Z" duration-ms="36919" status="PASS">
+        <test-method signature="T_008_CreateServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:33:56Z" name="T_008_CreateServiceTypes" description="Adding Service Type" finished-at="2020-05-02T14:34:58Z" duration-ms="62583" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=N Automation Name 2, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 2, Duration=60.0, Browser=Chrome}]]>
+                <![CDATA[{Name=Z Automation Name 3, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 3, Duration=90, Browser=Chrome}]]>
               </value>
             </param>
             <param index="1">
@@ -266,42 +239,42 @@ at java.base/java.lang.Thread.run(Thread.java:830)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_008_CreateServiceTypes -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:08:56Z" name="wrapUp" finished-at="2020-04-19T09:08:58Z" duration-ms="2295" status="PASS">
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:34:51Z" name="wrapUp" finished-at="2020-05-02T14:34:53Z" duration-ms="2099" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:08:58Z" name="wrapUp" finished-at="2020-04-19T09:09:00Z" duration-ms="1520" status="PASS">
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:34:56Z" name="wrapUp" finished-at="2020-05-02T14:34:57Z" duration-ms="850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:09:01Z" name="wrapUp" finished-at="2020-04-19T09:09:03Z" duration-ms="1209" status="PASS">
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:34:58Z" name="wrapUp" finished-at="2020-05-02T14:35:01Z" duration-ms="2624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:09:03Z" name="setUp" finished-at="2020-04-19T09:09:18Z" duration-ms="15510" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:35:01Z" name="setUp" finished-at="2020-05-02T14:35:14Z" duration-ms="13317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:09:03Z" name="setUp" finished-at="2020-04-19T09:09:17Z" duration-ms="14657" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:35:01Z" name="setUp" finished-at="2020-05-02T14:35:14Z" duration-ms="13447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:09:03Z" name="setUp" finished-at="2020-04-19T09:09:18Z" duration-ms="15488" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:35:01Z" name="setUp" finished-at="2020-05-02T14:35:14Z" duration-ms="13045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="T_009_VerifyServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:09:18Z" name="T_009_VerifyServiceTypes" description="Verifying Service Type" finished-at="2020-04-19T09:09:55Z" duration-ms="36794" status="PASS">
+        <test-method signature="T_009_VerifyServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:35:14Z" name="T_009_VerifyServiceTypes" description="Verifying Service Type" finished-at="2020-05-02T14:35:39Z" duration-ms="25079" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=Automation Name 1, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 1, Duration=30.0, Browser=Chrome}]]>
+                <![CDATA[{Name=Automation Name 1, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 1, Duration=30, Browser=Chrome}]]>
               </value>
             </param>
             <param index="1">
@@ -311,18 +284,18 @@ at java.base/java.lang.Thread.run(Thread.java:830)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_009_VerifyServiceTypes -->
-        <test-method signature="T_009_VerifyServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:09:18Z" name="T_009_VerifyServiceTypes" description="Verifying Service Type" finished-at="2020-04-19T09:09:46Z" duration-ms="28115" status="PASS">
+        <test-method signature="T_009_VerifyServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:35:14Z" name="T_009_VerifyServiceTypes" description="Verifying Service Type" finished-at="2020-05-02T14:35:41Z" duration-ms="26457" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Name=Z Automation Name 3, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 3, Duration=90.0, Browser=Chrome}]]>
+                <![CDATA[{Name=N Automation Name 2, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 2, Duration=60, Browser=Chrome}]]>
               </value>
             </param>
             <param index="1">
@@ -332,22 +305,47 @@ at java.base/java.lang.Thread.run(Thread.java:830)
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.testng.TestRunner@482191a2]]>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- T_009_VerifyServiceTypes -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:09:46Z" name="wrapUp" finished-at="2020-04-19T09:09:49Z" duration-ms="2659" status="PASS">
+        <test-method signature="T_009_VerifyServiceTypes(java.util.Hashtable, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:35:14Z" name="T_009_VerifyServiceTypes" description="Verifying Service Type" finished-at="2020-05-02T14:35:41Z" duration-ms="26411" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Name=Z Automation Name 3, ExpectedResult=Successful, Runmode=Y, Description=This is an Automation Test 3, Duration=90, Browser=Chrome}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.openmrs.tests.ServiceTypeTest.T_009_VerifyServiceTypes(java.util.Hashtable,java.lang.reflect.Method,org.testng.ITestContext)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@986bbc3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T_009_VerifyServiceTypes -->
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:35:39Z" name="wrapUp" finished-at="2020-05-02T14:35:42Z" duration-ms="3356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
-        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-04-19T09:09:55Z" name="wrapUp" finished-at="2020-04-19T09:09:56Z" duration-ms="1130" status="PASS">
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:35:41Z" name="wrapUp" finished-at="2020-05-02T14:35:42Z" duration-ms="1761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrapUp -->
+        <test-method is-config="true" signature="wrapUp()[pri:0, instance:com.openmrs.tests.ServiceTypeTest@222545dc]" started-at="2020-05-02T14:35:41Z" name="wrapUp" finished-at="2020-05-02T14:35:42Z" duration-ms="1569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrapUp -->
       </class> <!-- com.openmrs.tests.ServiceTypeTest -->
-    </test> <!-- ServiceNowTests -->
-  </suite> <!-- Service Now -->
+    </test> <!-- Open MRS Automation Tests -->
+  </suite> <!-- Open MRS Automation -->
 </testng-results>

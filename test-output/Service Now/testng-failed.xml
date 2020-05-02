@@ -7,16 +7,16 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="ServiceNowTests(failed)">
     <classes>
-      <class name="com.openmrs.tests.RegisterPatientTest">
+      <class name="com.openmrs.tests.ServiceTypeTest">
         <methods>
           <include name="wrapUp"/>
-          <include name="T_005_ConfirmPatientRegisteredUsingPatientName" invocation-numbers="0"/>
+          <include name="T_008_CreateServiceTypes" invocation-numbers="2 1 0"/>
+          <include name="T_009_VerifyServiceTypes" invocation-numbers="1"/>
           <include name="setUp"/>
-          <include name="T_003_RegisterNewPatient"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.openmrs.tests.RegisterPatientTest -->
+      </class> <!-- com.openmrs.tests.ServiceTypeTest -->
     </classes>
   </test> <!-- ServiceNowTests(failed) -->
 </suite> <!-- Failed suite [Service Now] -->

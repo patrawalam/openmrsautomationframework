@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Service Now" parallel = "classes">
+<suite name="Open MRS Automation" parallel = "classes">
 
 	<listeners>
 		<listener class-name="com.openmrs.listeners.CustomListener" />
@@ -8,9 +8,9 @@
 		
 	</listeners>
 
-	<test name="ServiceNowTests" >
+	<test name="Open MRS Automation Tests" >
 		<classes>
-			<!-- <class name="com.openmrs.tests.LoginTest" />-->
+			<!-- <class name="com.openmrs.tests.LoginTest" /> -->
 			<class name="com.openmrs.tests.RegisterPatientTest" />
 			 <class name="com.openmrs.tests.CaptureVitalsTest" />  
 			 <class name="com.openmrs.tests.ServiceTypeTest" /> 

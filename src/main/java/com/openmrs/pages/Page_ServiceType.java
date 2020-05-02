@@ -22,7 +22,7 @@ public class Page_ServiceType extends BasePage {
 	@FindBy(how = How.ID, using = "save-button")
 	private WebElement btnSave;
 	
-	By isNewServiceTypePresent = By.className("icon-plus");
+	By isNewServiceTypePresent = By.cssSelector("i[class=icon-plus]");
 	
 	public Page_ServiceType() {
 		super();
@@ -30,11 +30,11 @@ public class Page_ServiceType extends BasePage {
 	}
 	
 	public Object createNewServiceType(String name, String duration, String desc) {
-		txtName.clear();
+		clear(txtName);
 		sendkeys(txtName, name);
-		txtDuration.clear();
+		clear(txtDuration);
 		sendkeys(txtDuration, String.valueOf((int) Double.parseDouble(duration)));
-		txtDescription.clear();
+		clear(txtDescription);
 		sendkeys(txtDescription, desc);
 		click(btnSave);
 		if(!(isElementPresent(isNewServiceTypePresent)))

@@ -65,20 +65,20 @@ public class Page_CaptureVitals extends BasePage {
 	
 	public Object captureVitals(String height, String weight, String temperature, 
 			String pulse, String systolic, String diastolic) {
-		txtHeight.sendKeys(String.valueOf((int) Double.parseDouble(height)));
-		lblWeight.click();
-		txtWeight.sendKeys(String.valueOf((int) Double.parseDouble(weight)));
-		lblCalculatedBMI.click();
-		lblTemperature.click();
-		txtTemperature.sendKeys(String.valueOf((int) Double.parseDouble(temperature)));
-		lblPulse.click();
-		txtPulse.sendKeys(String.valueOf((int) Double.parseDouble(pulse)));
-		lblBloodPressure.click();
-		txtSystolic.sendKeys(String.valueOf((int) Double.parseDouble(systolic)));
-		txtDiastolic.sendKeys(String.valueOf((int) Double.parseDouble(diastolic)));
-		lblConfirm.click();
+		sendkeys(txtHeight, String.valueOf((int) Double.parseDouble(height)));
+		click(lblWeight);
+		sendkeys(txtWeight, String.valueOf((int) Double.parseDouble(weight)));
+		click(lblCalculatedBMI);
+		click(lblTemperature);
+		sendkeys(txtTemperature, String.valueOf((int) Double.parseDouble(temperature)));
+		click(lblPulse);
+		sendkeys(txtPulse, String.valueOf((int) Double.parseDouble(pulse)));
+		click(lblBloodPressure);
+		sendkeys(txtSystolic, String.valueOf((int) Double.parseDouble(systolic)));
+		sendkeys(txtDiastolic, String.valueOf((int) Double.parseDouble(diastolic)));
+		click(lblConfirm);
 		wait.until(ExpectedConditions.elementToBeClickable(btnSubmit));
-		btnSubmit.click();
+		click(btnSubmit);
 		
 		if(isElementPresent(lnkCaptureVitals))
 			return new Page_VisitsDetailsPage();

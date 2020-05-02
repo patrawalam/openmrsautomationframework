@@ -36,6 +36,7 @@ public class Page_TopMenu {
 	public Object logout() {
 		//wait.until(ExpectedConditions.elementToBeClickable(lnkLogout));
 		Uninterruptibles.sleepUninterruptibly(1, TimeUnit.SECONDS);
+		BasePage.explicitlyWaitForElementClickable(lnkLogout);
 		lnkLogout.click();
 		if(!(isElementPresent(isPresenttxtUserName))){
 			return new Page_Home();

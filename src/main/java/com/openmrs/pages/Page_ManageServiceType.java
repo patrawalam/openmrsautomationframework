@@ -36,7 +36,7 @@ public class Page_ManageServiceType extends BasePage{
 	}
 	
 	public Object gotoServiceTypes() {
-		btnNewServiceTypes.click();
+		click(btnNewServiceTypes);
 		if(!(isElementPresent(isNamePresent)))
 			return this;
 		else
@@ -57,7 +57,7 @@ public class Page_ManageServiceType extends BasePage{
 					break;
 				}
 			if(ifElementNotFound && lnkNext.isEnabled()) {
-				lnkNext.click();
+				click(lnkNext);
 			}
 			else 
 				ifElementNotFound = false;

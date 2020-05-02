@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+
 import com.openmrs.browser.DriverManager;
-import com.openmrs.reports.LogStatus;
 
 
 public class Page_Login extends BasePage{
@@ -33,13 +33,10 @@ public class Page_Login extends BasePage{
 	
 	public Object doLogin(String uName, String pwd) {
 		
-		LogStatus.info("Entering username :: "+uName);
-		txtUsername.sendKeys(uName);
-		
-		LogStatus.info("Entering password :: "+pwd);
-		txtPassword.sendKeys(pwd);
-		selRegistrationDesk.click();
-		btnloginButton.click();
+		sendkeys(txtUsername, uName);
+		sendkeys(txtPassword, pwd);
+		click(selRegistrationDesk);
+		click(btnloginButton);
 		if(isElementPresent(isPresentlnkLogout))
 			return new Page_Home(); 
 		else 
